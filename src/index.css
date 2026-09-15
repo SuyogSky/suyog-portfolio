@@ -1,111 +1,159 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@import "tailwindcss";
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+@theme {
+  /* =========================================
+     TYPOGRAPHY
+     ========================================= */
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --font-display: "Permanent Marker", cursive;
+  --font-hand: "Caveat", "Segoe Script", cursive;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
 
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+  /* =========================================
+     PAPER — LIGHT
+     ========================================= */
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
+  --color-paper: #FAF7EF;
+  --color-paper-2: #F2EDE0;
+  --color-paper-3: #E9E2D2;
+  --color-paper-soft: #FFFDF7;
+  --color-paper-warm: #F7F1E4;
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-}
+  /* =========================================
+     INK — LIGHT
+     ========================================= */
 
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
+  --color-ink: #1C1B19;
+  --color-ink-soft: #3A3733;
+  --color-ink-muted: #625E57;
+  --color-ink-faint: #8F8A80;
 
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
+  /* =========================================
+     PENCIL
+     ========================================= */
 
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+  --color-pencil: #8F8A80;
+  --color-pencil-light: #B7B1A5;
+  --color-pencil-dark: #6F6A62;
+
+
+  /* =========================================
+     TEAL — PRIMARY ACCENT
+     ========================================= */
+
+  --color-teal: #3FB5A3;
+  --color-teal-light: #79CDBF;
+  --color-teal-soft: #B8E4DC;
+  --color-teal-deep: #2B8C7D;
+  --color-teal-dark: #216F64;
+
+
+  /* =========================================
+     CORAL — SECONDARY ACCENT
+     ========================================= */
+
+  --color-coral: #FF6A52;
+  --color-coral-light: #FF9684;
+  --color-coral-soft: #FFD0C7;
+  --color-coral-deep: #D94E3B;
+  --color-coral-dark: #B83D2F;
+
+
+  /* =========================================
+     YELLOW — HIGHLIGHTER
+     ========================================= */
+
+  --color-yellow: #FFD23F;
+  --color-yellow-light: #FFE27A;
+  --color-yellow-soft: #FFF0B8;
+  --color-yellow-deep: #E5B72F;
+  --color-yellow-dark: #C99B1F;
+
+
+  /* =========================================
+     LINES & BORDERS
+     ========================================= */
+
+  --color-line: rgba(28, 27, 25, 0.85);
+  --color-line-soft: rgba(28, 27, 25, 0.35);
+  --color-line-faint: rgba(28, 27, 25, 0.15);
+
+
+  /* =========================================
+     SHADOWS
+     ========================================= */
+
+  --color-shadow: rgba(28, 27, 25, 0.18);
+  --color-shadow-soft: rgba(28, 27, 25, 0.10);
+  --color-shadow-deep: rgba(28, 27, 25, 0.28);
+
+
+  /* =========================================
+     DARK / NIGHT NOTEBOOK
+     ========================================= */
+
+  --color-night: #1C1B19;
+  --color-night-2: #25231F;
+  --color-night-3: #302D27;
+  --color-night-paper: #292722;
+  --color-night-paper-2: #353129;
+
+
+  /* =========================================
+     DARK INK / TEXT
+     ========================================= */
+
+  --color-night-ink: #F5EFE2;
+  --color-night-ink-soft: #DDD5C7;
+  --color-night-ink-muted: #AEA699;
+  --color-night-pencil: #827B70;
+
+
+  /* =========================================
+     DARK TEAL
+     ========================================= */
+
+  --color-night-teal: #4EC2AF;
+  --color-night-teal-light: #78D1C2;
+  --color-night-teal-deep: #329886;
+
+
+  /* =========================================
+     DARK CORAL
+     ========================================= */
+
+  --color-night-coral: #FF765F;
+  --color-night-coral-light: #FF9A88;
+  --color-night-coral-deep: #D95343;
+
+
+  /* =========================================
+     DARK YELLOW
+     ========================================= */
+
+  --color-night-yellow: #FFD858;
+  --color-night-yellow-light: #FFE58A;
+  --color-night-yellow-deep: #D7AE2F;
+
+
+  /* =========================================
+     DARK LINES
+     ========================================= */
+
+  --color-night-line: rgba(245, 239, 226, 0.82);
+  --color-night-line-soft: rgba(245, 239, 226, 0.35);
+  --color-night-line-faint: rgba(245, 239, 226, 0.15);
+
+
+  /* =========================================
+     DARK SHADOWS
+     ========================================= */
+
+  --color-night-shadow: rgba(0, 0, 0, 0.35);
+  --color-night-shadow-soft: rgba(0, 0, 0, 0.20);
+  --color-night-shadow-deep: rgba(0, 0, 0, 0.50);
 }
