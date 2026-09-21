@@ -15,7 +15,11 @@ function Hero() {
             <header className="w-full max-w-7xl h-20 max-sm:h-16 mx-auto flex items-center justify-between border-b sm:border-none border-dashed border-line-soft">
                 <div className="font-display text-xl uppercase">S<span className="text-teal">.</span>S</div>
 
-                <div className="font-mono text-[10px] max-sm:text-[8px] uppercase tracking-[0.3em] text-pencil">Personal Portfolio / 01</div>
+                <div className="font-mono text-[10px] max-sm:text-[8px] uppercase tracking-[0.3em] text-pencil flex items-center justify-center gap-3">
+                    <span className="text-coral">[</span>
+                    Personal Portfolio / 01
+                    <span className="text-coral">]</span>
+                </div>
 
                 <span className="hidden md:inline-block w-8 sm:w-10 md:w-12"></span>
 

@@ -15,7 +15,7 @@ function SkillsMarquee() {
   ]
 
   return (
-    <section className="w-full h-40 max-lg:h-35 max-sm:h-25 bg-paper-3 flex items-center justify-center overflow-hidden select-none">
+    <section className="w-full h-40 max-lg:h-35 max-sm:h-25 bg-paper-3 flex items-center justify-center overflow-hidden select-none border-b-2 border-line">
       <div className="marquee-wrapper relative w-full -rotate-1 py-4 max-md:py-2 bg-paper-soft border-y border-ink-faint flex items-center">
         <span className="hidden sm:flex absolute -top-3 left-20 -rotate-13 w-17.5 h-5 bg-yellow-soft border-y border-yellow-deep opacity-80"></span>
 
