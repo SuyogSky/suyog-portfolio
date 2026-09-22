@@ -1,4 +1,3 @@
-import React from 'react'
 import OCRThumbnail from '../assets/ocr.jpeg'
 import QAAutomation from '../assets/qa-automation.jpeg'
 
@@ -10,7 +9,7 @@ function Projects() {
             dark:bg-night-paper dark:bg-[linear-gradient(to_right,rgba(245,239,226,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(245,239,226,0.05)_1px,transparent_1px)]
             border-b
             [border-image:repeating-linear-gradient(to_right,var(--color-line-soft)_0,var(--color-line-soft)_10px,transparent_10px,transparent_18px)_1]">
-            <div className="w-full max-w-7xl mx-auto px-12 max-md:px-8 max-sm:px-4 py-30 max-md:py-20 max-sm:py-15">
+            <div className="w-full max-w-7xl mx-auto px-12 max-md:px-8 max-sm:px-4 py-30 max-md:py-20">
                 <div className="font-mono text-xs max-sm:text-[10px] uppercase tracking-[0.3em] text-pencil flex items-center justify-start gap-3">
                     <span className="text-coral">[</span>
                     Selected Works / 02
@@ -43,7 +42,7 @@ function Projects() {
                     <p className="font-hand text-base text-pencil ml-2">Showing 6 of 6 projects</p>
                 </div>
 
-                <main className="w-full flex flex-col items-center justify-start gap-[clamp(70px,9vw,110px)] py-15 max-sm:py-12">
+                <main className="w-full flex flex-col items-center justify-start gap-[clamp(70px,9vw,110px)] mt-15 max-sm:mt-12">
                     <article className="w-full grid grid-cols-2 max-lg:grid-cols-1 gap-[clamp(28px,5vw,64px)] items-center">
                         <div className="px-3 py-6 max-w-120 mx-auto bg-paper-soft shadow-[4px_6px_0_rgba(28,27,25,0.2)] -rotate-2 hover:rotate-0 hover:-translate-y-5 hover:shadow-2xl transition-all duration-300 cursor-pointer">
                             <img src={OCRThumbnail} alt="" className="border border-ink rounded-md" />
