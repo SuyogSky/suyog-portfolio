@@ -12,7 +12,7 @@ function Projects() {
             <div className="w-full max-w-7xl mx-auto px-12 max-md:px-8 max-sm:px-4 py-30 max-md:py-20">
                 <div className="font-mono text-xs max-sm:text-[10px] uppercase tracking-[0.3em] text-pencil flex items-center justify-start gap-3">
                     <span className="text-coral">[</span>
-                    Selected Works / 02
+                    Selected Works // Chapter 02
                     <span className="text-coral">]</span>
                 </div>
                 <h1 className="font-display font-bold text-[clamp(2.1rem,4.2vw,3.4rem)] leading-[0.8] w-fit flex flex-col gap-2 mt-4">

@@ -17,7 +17,7 @@ function Hero() {
 
                 <div className="font-mono text-[10px] max-sm:text-[8px] uppercase tracking-[0.3em] text-pencil flex items-center justify-center gap-3">
                     <span className="text-coral">[</span>
-                    Personal Portfolio / 01
+                    Personal Portfolio // 01
                     <span className="text-coral">]</span>
                 </div>
 
@@ -116,7 +116,7 @@ function Hero() {
                         <p className="font-hand text-2xl max-lg:text-md">React · Angular · TypeScript</p>
                         <p className="mt-1 font-body text-xs max-lg:text-[10px] font-normal leading-5 tracking-wide text-ink-muted">I turn ideas into interfaces people actually enjoy using.</p>
                     </div>
-                    
+
                     <span className="font-mono text-xs max-lg:text-[8px] max-md:hidden tracking-widest text-pencil pb-4">2026</span>
                 </div>
             </main>
